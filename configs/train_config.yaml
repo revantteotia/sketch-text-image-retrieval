@@ -1,0 +1,12 @@
+per_gpu_train_batch_size : 64 # 
+per_gpu_eval_batch_size : 128 # 
+num_workers : 1
+num_train_epochs : 42 # number of epochs to train
+
+gradient_accumulation_steps : 1 # Number of updates steps to accumulate before backward
+
+logging_steps : 10 #  log every this steps
+evaluate_during_training : True
+saved_checkpoints : directory_to_save_checkpoint
+logs : logs_sketch
+

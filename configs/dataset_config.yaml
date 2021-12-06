@@ -1,0 +1,9 @@
+# VG images directory
+images_directory_path : /home/trevant/DL4CV/project_datasets/VG_ALL
+
+# path of imagenet-sketch directory
+query_images_directory_path : /home/trevant/DL4CV/project_datasets/imagenet-sketch
+
+# path of dataset files for training and validation
+annotation_file_path_train : data/dlcv_project_attributes_dataset_large_train.json
+annotation_file_path_val : data/dlcv_project_attributes_dataset_large_val.json
