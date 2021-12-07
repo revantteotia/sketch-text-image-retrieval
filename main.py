@@ -20,7 +20,6 @@ from tqdm import tqdm
 
 DATA_CONFIG_PATH = 'configs/dataset_config.yaml'
 TRAINER_CONFIG_PATH = 'configs/train_config.yaml'
-MODEL_CONFIG_PATH = 'model/comp_model_config.yaml'
 
 def parse_opt():
     """Parses the input arguments."""
@@ -330,7 +329,6 @@ def main():
 
     data_config = load_config_file(DATA_CONFIG_PATH)
     train_config = load_config_file(TRAINER_CONFIG_PATH)
-    model_config = load_config_file(MODEL_CONFIG_PATH)
 
     config = OmegaConf.merge(train_config, data_config)
 
@@ -355,8 +353,6 @@ def main():
     # getting dataset for training/validation
     train_dataset = STIRDataset(data_config, tokenizer, split='train')
     val_dataset = STIRDataset(data_config, tokenizer, split='val')
-
-    logger.info(f"model parameters {model_config}")
 
     model, optimizer = create_model_and_optimizer(opt, train_dataset.get_all_texts())
 
