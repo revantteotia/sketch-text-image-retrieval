@@ -1,5 +1,5 @@
 # sketch-text-image-retrieval
-This repo contains code for the Deep Learning for Computer Vision course project. The project aims to develop an image retrieval system which takes sketch + text description as query and retrieves relevant images from an image dataset/gallery.
+This repo contains code for the [Deep Learning for Computer Vision](https://www.deeplearningforcomputervision.com/) (COMS W 4995 006 Fall21) course project. The project aims to develop an image retrieval system which takes sketch + text description as query and retrieves relevant images from an image dataset/gallery.
 ![Problem statement](images/stir_problem.jpg "Problem statement")
 
 ## Requirements
